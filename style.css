@@ -168,6 +168,7 @@ a {
 
 .section-2>.card {
     /* border: 1px solid gray; */
+    padding: 1rem;
     width: 350px;
 }
 
