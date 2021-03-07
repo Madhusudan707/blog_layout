@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,200&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --heading-font: 'Source Sans Pro', sans-serif;
+    --paragraph-font: 'Raleway', sans-serif;
+}
+
 html,
 body {
     margin: 0;
@@ -87,7 +95,7 @@ a {
 
 .header>h4 {
     color: white;
-
+    font-family: var(--heading-font)
 }
 
 .section-1 {
@@ -98,25 +106,32 @@ a {
         "image-block image-block article";
 }
 
-.image-block {
+.section-1>.image-block {
     padding: 0rem 6rem;
     grid-area: image-block;
 }
 
-.image-block>img {
+.section-1>.image-block>img {
 
     width: 90%;
 }
 
-.article {
+.section-1>.article {
 
     width: 80%;
     grid-area: article;
 }
 
-.article>p {
+.section-1>.article>p {
     text-align: justify;
     font-size: 1.4rem;
+    line-height: 1.5;
+    color: #738a94;
+    /* font-family: var(--paragraph-font); */
+}
+
+.section-1>.article>h1 {
+    font-family: var(--heading-font)
 }
 
 .post-card {
@@ -140,23 +155,39 @@ a {
 
 .post-info {
     grid-area: post-info;
-    color: gray;
+    color: #738a94;
 }
 
 .section-2 {
     display: grid;
-    justify-content: center;
+
+    justify-content: space-around;
     grid-area: section-2;
     grid-template-columns: auto auto auto;
 }
 
 .section-2>.card {
-
-    width: 400px;
+    /* border: 1px solid gray; */
+    width: 350px;
 }
 
 .section-2>.card>.card-image>img {
     width: 350px;
+}
+
+.section-2>.card>.article {
+    width: 100%;
+}
+
+.section-2>.card>.article>p {
+    color: #738a94;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+}
+
+.section-2>.card>.article>h2 {
+    font-family: var(--heading-font)
 }
 
 .section-3 {
