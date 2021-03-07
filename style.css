@@ -92,8 +92,7 @@ a {
 
 .section-1 {
     display: grid;
-
-    align-items: center;
+    justify-content: center;
     grid-area: section-1;
     grid-template-areas:
         "image-block image-block article";
@@ -146,12 +145,13 @@ a {
 
 .section-2 {
     display: grid;
-    justify-items: center;
+    justify-content: center;
     grid-area: section-2;
     grid-template-columns: auto auto auto;
 }
 
 .section-2>.card {
+
     width: 400px;
 }
 
