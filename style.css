@@ -1,0 +1,174 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "header header header"
+        "section-1 section-1 section-1"
+        "section-2 section-2 section-2"
+        "section-3 section-3 section-3"
+
+}
+
+.navbar {
+    display: grid;
+    grid-template-areas:
+        "page-nav page-nav social-nav";
+    grid-area: navbar;
+    background-color: black;
+    height: 350px;
+
+}
+
+.page-nav {
+    grid-area: page-nav;
+}
+
+.page-nav,
+.social-nav {
+    list-style: none;
+
+}
+
+.page-nav>li,
+.social-nav>li {
+    display: inline;
+    padding: 1rem;
+}
+
+.page-nav>li>a,
+.social-nav>li>a {
+    color: white;
+}
+
+.social-nav {
+    grid-area: social-nav;
+}
+
+.social-nav>li>button {
+    border-radius: 6px;
+}
+
+.subscribe-button {
+
+    margin: 0 0 0 10px;
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 1em;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+.header {
+    display: grid;
+
+    justify-items: center;
+    align-items: center;
+    grid-area: navbar;
+    height: 100px;
+    margin-top: 8rem;
+}
+
+.header>img {
+    /* border: 2px solid red; */
+    width: 170px;
+}
+
+.header>h4 {
+    color: white;
+
+}
+
+.section-1 {
+    display: grid;
+
+    align-items: center;
+    grid-area: section-1;
+    grid-template-areas:
+        "image-block image-block article";
+}
+
+.image-block {
+    padding: 0rem 6rem;
+    grid-area: image-block;
+}
+
+.image-block>img {
+
+    width: 90%;
+}
+
+.article {
+
+    width: 80%;
+    grid-area: article;
+}
+
+.article>p {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.post-card {
+    display: grid;
+    grid-template-columns: 50px 200px;
+
+    grid-template-areas:
+        "post-icon post-name "
+        "post-icon post-info";
+}
+
+.post-icon {
+    grid-area: post-icon;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.post-name {
+    grid-area: post-name;
+}
+
+.post-info {
+    grid-area: post-info;
+    color: gray;
+}
+
+.section-2 {
+    display: grid;
+    justify-items: center;
+    grid-area: section-2;
+    grid-template-columns: auto auto auto;
+}
+
+.section-2>.card {
+    width: 400px;
+}
+
+.section-2>.card>.card-image>img {
+    width: 350px;
+}
+
+.section-3 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-area: section-3;
+    grid-template-columns: auto auto;
+    justify-content: center;
+
+}
+
+.section-3>img {
+    width: 500px;
+
+}
