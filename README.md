@@ -1,1 +1,5 @@
-![BLOG TEMPLATE](blog_layout.png)
+# Ghost Blog Template using Grid
+
+## Preview 
+
+![BLOG TEMPLATE](preview.png)
